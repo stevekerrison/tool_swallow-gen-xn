@@ -118,10 +118,7 @@ class SwallowXNGenerator(object):
 
   def dirbits(self):
     """Generate the direction bits for the current node position.
-    Implementation is similar to swallow_xlinkboot
-    
-    TODO: XScope directions - old route probably invalid now, hence
-    unimplemented"""
+    Implementation is similar to swallow_xlinkboot"""
     d = ['0'] * 16
     nref = self.node_ref(self.pos)
     layer = (nref >> self.r_lpos) & (2**self.r_lbits - 1)
